@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+margin: 0;
+font: 14px/1.6 Verdana, Geneva, Tahoma, sans-serif;
+color: #222;
+background: #f2f2f2;
+}
+main, header, footer {
+width: 960px;
+margin: 0 auto;
+}
+header { padding: 18px 0 10px; border-bottom: 1px solid #bbb; }
+h1 { font: bold 28px/1.2 Georgia, "Times New Roman", Times, serif; margin: 0 0 6px; color: #113a63; }
+.lead { color: #555; }
+nav { margin: 10px auto 12px; border: 1px solid #7f9bbd; background: linear-gradient(#c9d9ee, #a9c0df); box-shadow: 0 1px 0 #fff inset; }
+nav ul { list-style: none; margin: 0; padding: 0 6px; display: flex; flex-wrap: wrap; }
+nav a { display: block; padding: 8px 12px; color: #0b2a4d; text-decoration: none; border-right: 1px solid rgba(0,0,0,.08); }
+nav a:hover { background: rgba(255,255,255,.45); text-decoration: underline; }
+main { background: #fff; border: 1px solid #cfcfcf; box-shadow: 0 2px 4px rgba(0,0,0,.05); padding: 12px; overflow: hidden; }
+article { width: 620px; float: left; }
+main > aside { float: right; width: 300px; background: #fff; border: 1px solid #cfcfcf; box-shadow: 0 2px 4px rgba(0,0,0,.05); padding: 12px; }
+#slideshow { width: 100%; display: flex; align-items: center; justify-content: center; margin: 12px 0; }
+#slideshow img { max-width: 100%; height: auto; border: 1px solid #ddd; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+footer { width: 960px; margin: 16px auto; padding: 12px; color: #3b3b3b; background: #a9c0df; }
+fieldset { border: 1px solid #c9c9c9; margin: 8px 0; padding: 8px; }
+legend { font-weight: bold; }
+label { font-weight: 600; }
+input, select, button { font: inherit; padding: 6px 8px; margin-top: 4px; }
+button { cursor: pointer; }
+#comentario-status { margin-left: 8px; font-weight: bold; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border: 1px solid #cfcfcf; padding: 6px 8px; text-align: left; }
+.table th { background: #eef4ff; }
+.grade-musicos { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.musico { border: 1px solid #e3e3e3; padding: 12px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.05); background: #fff; }
+.musico img { display: block; max-width: 100%; height: auto; border: 1px solid #ddd; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.video-wrapper { margin-top: 10px; aspect-ratio: 16/9; }
+.video-wrapper iframe { width: 100%; height: 100%; }
+.container { max-width: 920px; margin: 0 auto; padding: 1rem; }
+
+
+.campo { display: grid; gap: .4rem; margin: .6rem 0; }
+
+

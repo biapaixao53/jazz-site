@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Júlio Resende",
+    "imagem": "/imagens/musicos/julio resende.png",
+    "instrumentosestilos": "Piano • Fado-Jazz / Jazz contemporâneo",
+    "descricao": "Pianista e compositor português que mistura o fado e o jazz com linguagem improvisada.",
+    "urlVideo": "https://www.youtube.com/embed/GgbSr6O2vfc", 
+    "data": "2015-06-10"
+  },
+  {
+    "nome": "Mário Laginha",
+    "imagem": "/imagens/musicos/mario langinha.png",
+    "instrumentosestilos": "Piano • Jazz moderno / jazz de fusão",
+    "descricao": "Um dos nomes maiores do jazz em Portugal, domina improvisação, duos e trios inovadores.",
+    "urlVideo": "https://www.youtube.com/embed/KAggWL7WuGo", 
+    "data": "1985-03-15"
+  },
+  {
+    "nome": "Jacinta",
+    "imagem": "/imagens/musicos/jacinta.png",
+    "instrumentosestilos": "Vocal • Jazz vocal / standards",
+    "descricao": "Cantora de jazz portuguesa com longa carreira internacional e álbum pela Blue Note.",
+    "urlVideo": "https://www.youtube.com/embed/32zxrIukXL8",
+    "data": "2000-01-01"
+  }
+]
