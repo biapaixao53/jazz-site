@@ -112,3 +112,161 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+/* --- CONTÉM: estilos comuns às 3 páginas (inquerito, resposta, resultados) --- */
+
+.inquerito,
+.resposta,
+.resultados {
+  max-width: 980px;
+  margin: 0 auto 24px auto;
+  background: #fff;
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+}
+
+/* Títulos principais (igual ao teu Formulário de Voluntário) */
+.inquerito h2,
+.resposta h2,
+.resultados h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #1f3a56;
+  margin: 0 0 16px;
+}
+
+/* Subtítulos/Separadores de secção */
+.inquerito h3,
+.resultados h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #333;
+  margin: 24px 0 8px;
+  padding: 8px 10px;
+  border: 1px solid #e6e6e6;
+  border-left: 4px solid #b9c9dc;   /* realce à esquerda */
+  border-radius: 4px;
+  background: linear-gradient(#f7f9fb, #f2f5f8);
+}
+
+/* Texto auxiliar/erros */
+.inquerito p,
+.resposta p,
+.resultados p { line-height: 1.45; }
+.inquerito .erro { color: #b00020; }
+
+/* Inputs a toda a largura, consistentes com o resto do site */
+.inquerito input[type="text"],
+.inquerito input[type="tel"],
+.inquerito select,
+.inquerito textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfd4da;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  box-sizing: border-box;
+}
+
+.inquerito textarea { min-height: 120px; resize: vertical; }
+
+.inquerito input[type="text"]:focus,
+.inquerito input[type="tel"]:focus,
+.inquerito select:focus,
+.inquerito textarea:focus {
+  border-color: #86a6c6;
+  box-shadow: 0 0 0 3px rgba(134,166,198,.15);
+}
+
+/* Labels empilhados como no formulário existente */
+.inquerito label {
+  display: block;
+  margin: 6px 0;
+  font-weight: 500;
+}
+
+/* --- Lista de músicas (grid limpo) --- */
+.inquerito .songs {              /* <div class="songs"> ...labels com checkboxes... */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 6px 16px;
+}
+.inquerito .songs label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .inquerito .songs { grid-template-columns: 1fr; }
+}
+
+/* --- Barra de ações/botões --- */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn,
+.inquerito button,
+.resposta button,
+.resultados button {
+  appearance: none;
+  border: 1px solid #bfc7cf;
+  background: linear-gradient(#f7f8fa, #eceff3);
+  color: #222;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: filter .15s ease, box-shadow .15s ease, transform .02s;
+}
+
+.btn:hover,
+.inquerito button:hover,
+.resposta button:hover,
+.resultados button:hover {
+  filter: brightness(0.98);
+}
+
+.btn:active,
+.inquerito button:active,
+.resposta button:active,
+.resultados button:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  border-color: #7ea2c6;
+  background: linear-gradient(#e9f1fb, #d8e6f6);
+  color: #0f2e50;
+  font-weight: 600;
+}
+
+/* --- Resposta (lista simples, bonitinha) --- */
+.resposta p strong { color: #1f3a56; }
+.resposta .meta {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f7f9fb;
+  border: 1px solid #e6e9ed;
+  border-radius: 4px;
+}
+
+/* --- Resultados (listas e contagens) --- */
+.resultados ul, .resultados ol { margin: 8px 0 16px 20px; }
+.resultados li { margin: 4px 0; }
+.resultados .panel {
+  padding: 12px;
+  background: #f9fbfd;
+  border: 1px solid #e6e9ed;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}

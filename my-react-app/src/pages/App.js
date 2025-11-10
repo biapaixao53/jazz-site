@@ -6,6 +6,10 @@ import Links from "../components/Links";
 import NoticiasAside from "../components/NoticiasAside";
 import Slideshow from "../components/Slideshow";
 import MusicosLista from "../components/MusicosLista";
+import Inquerito from "../components/Inquerito";
+import RespostaInquerito from "../components/RespostaInquerito";
+import ResultadosInquerito from "../components/ResultadosInquerito";
+
 
 export default function App() {
   const navigate = useNavigate();
@@ -25,7 +29,7 @@ return (
 <p><strong>Local:</strong> Auditório JJ Langinha no ISCTE</p>
 <p><strong>Artistas:</strong> Trio de Jazz (bateria, trompete, guitarra)</p>
 <p>Estamos a reunir <em>voluntários</em> para apoiar a produção: receção aos músicos, apoio técnico simples e logística.</p>
-  {/* Botão que abre a página do formulário (ponto 4) */}
+  {}
             <p>
               <button onClick={() => navigate("/form")}>
                 Abrir formulário de voluntário
@@ -40,6 +44,7 @@ return (
 <MusicosLista />
 </article>
 <NoticiasAside />
+
 </main>
 
 

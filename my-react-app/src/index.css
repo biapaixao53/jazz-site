@@ -38,8 +38,96 @@ button { cursor: pointer; }
 .video-wrapper { margin-top: 10px; aspect-ratio: 16/9; }
 .video-wrapper iframe { width: 100%; height: 100%; }
 .container { max-width: 920px; margin: 0 auto; padding: 1rem; }
-
-
 .campo { display: grid; gap: .4rem; margin: .6rem 0; }
 
 
+
+
+.inquerito,
+.resposta,
+.resultados {width: 960px; margin: 16px auto; background: #fff; border: 1px solid #cfcfcf;padding: 12px;}
+.inquerito h2,
+.resposta h2,
+.resultados h2 {margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-weight: 700;font-size: 2rem; color: #0e2a48; /* próximo do azul dos teus títulos */}
+.inquerito h3,
+.resultados h3 { margin: 14px 0 6px;font-weight: 700;font-size: 1rem;color: #222;}
+.inquerito p,
+.resposta p,
+.resultados p { margin: 6px 0; line-height: 1.45;}
+.inquerito .erro { color: #b00020; font-weight: 600; }
+.inquerito label { font-weight: 600; display: block; margin: 6px 0; }
+.inquerito input[type="text"],
+.inquerito input[type="tel"],
+.inquerito select,
+.inquerito textarea {display: block; width: 100%;padding: 6px 8px; border: 1px solid #cfcfcf;   border-radius: 2px; background: #fff; font: inherit; outline: none;}
+.inquerito textarea { min-height: 120px; resize: vertical; }
+.inquerito .songs {display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr)); gap: 6px 14px;margin-bottom: 8px;}
+.inquerito .songs label { display: flex; align-items: center;gap: 8px;font-weight: 600;}
+@media (max-width: 680px) { .inquerito .songs { grid-template-columns: 1fr; } }
+
+/* Barra de ações – botões como os teus (linha 28: input, select, button) */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn,
+.inquerito button,
+.resposta button,
+.resultados button {
+  font: inherit;          /* mantém a tua tipografia */
+  padding: 6px 8px;       /* igual ao resto do site */
+  cursor: pointer;
+  border: 1px solid #cfcfcf;
+  background: #f3f6f9;    /* muito leve, discreto */
+  color: #222;
+  border-radius: 2px;
+}
+.btn:hover,
+.inquerito button:hover,
+.resposta button:hover,
+.resultados button:hover { background: #e9eef4; }
+.btn-primary { background: #e3edf9; border-color: #c3d4ea; color: #0e2a48; font-weight: 600; }
+
+/* —— Resultados: listas com “cara” de tabela (compatível com a tua .table) —— */
+.resultados .panel {
+  border: 1px solid #cfcfcf;
+  background: #f7f9fc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.resultados ul,
+.resultados ol {
+  margin: 6px 0 10px 18px;
+}
+
+.resultados .stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cfcfcf;   /* borda tipo .table */
+}
+.resultados .stats li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+}
+.resultados .stats li:first-child {
+  background: #eef4ff;         /* cabeçalho suave, a combinar */
+  font-weight: 700;
+  border-top: none;
+}
+
+/* —— Resposta: bloco meta (crítica) com a tua moldura clara —— */
+.resposta .meta {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #f7f9fc;
+  border: 1px solid #cfcfcf;
+}

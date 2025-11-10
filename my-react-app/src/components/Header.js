@@ -16,6 +16,7 @@ return (
 <li><a href="#horario">Horário das Músicas</a></li>
 <li><a href="#links">Links associados</a></li>
 <li><a href="#contactos">Contactos</a></li>
+<li><a href="/inquerito">Inquerito</a></li>
 </ul>
 </nav>
 
